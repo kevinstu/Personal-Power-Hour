@@ -1,0 +1,126 @@
+/* Universal */
+
+.btn {
+  background: #4c6484;
+  border-color: #4c6484;
+}
+
+b {
+  color: #4c6484;
+}
+
+p {
+  font-size: 1rem;
+}
+
+/* Nav */
+
+/* Content */
+
+
+
+section {
+  padding: 91px 0;
+}
+
+/* Content - Play */
+
+
+#play h1 {
+  color: #4c6484;
+}
+
+#header-subtext {
+  color: #4c6484;
+  font-size: 1.12rem;
+}
+
+
+#play button {
+  letter-spacing: 3px;
+    margin-bottom: 0;
+      font-size: 0.75rem;
+}
+
+.x-button {
+   position: absolute;
+   left: 90%;
+   top: 3%;
+}
+
+
+
+/* Timer*/
+
+#timer-div {
+  display: none;
+}
+
+#timer {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+/* Content - How to Play */
+
+#how-to-play {
+  background-color: #4c6484;
+}
+
+#how-to-play p {
+  font-size: 1.15rem;
+}
+
+
+/* Content - Categories*/
+
+#categories h3 {
+  color: #4c6484;
+}
+
+.card {
+  font-size: 0.92rem;
+  height: 200px;
+  color: #4c6484;
+}
+
+
+#categories button {
+  letter-spacing: 3px;
+   margin-bottom: 0;
+  font-size: 0.75rem;
+}
+
+
+
+/* Footer */
+
+footer {
+  background-color: #4c6484;
+}
+
+@media only screen and (max-width: 992px) {
+  .card {
+    height: 125px;
+  }
+
+  .x-button {
+   position: absolute;
+   left: 95%;
+   top: 5%;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  #header-subtext {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+
+}
+
+
+
