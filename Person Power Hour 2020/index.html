@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Personal Power Hour | The Competetive Musical Drinking Game</title>
+</head>
+<body id="home">
+
+<!-- NAVBAR -->
+    
+    <nav  id="navbar" class="navbar navbar-expand-md bg-white navbar-light fixed-top shadow-sm">
+      <div class="container">
+        <a href="#home"><img class="logo" src="img/PersonalPowerHour_Logo_Two.png" height="40px"></a>
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarNav2"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav2">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#how-to-play">HOW TO PLAY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#categories">CATEGORIES</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<!-- PLAY -->
+
+    <section id="play">
+    	<div class="container">
+    		<h1 id="header-text" class="h2 text-center">The Competetive Musical Drinking Game</h1>
+            <p id="header-subtext" class="text-center mt-3">Select your <b>six musical categories</b> below and hit <b>"Let's Party"</b> to get started.</p>
+                    
+
+                <!-- Game Cards -->
+
+
+            <div class="row justify-content-center mt-5">
+                <div class="col-lg-3">
+                  <div class="card p-2 m-2 shadow-sm">
+                    <a  href="#" id="x-button-0" class="x-button" style="display: none">X</a>
+                    <div class="card-body">
+                      <h5 id="game-card-title-0" class="card-title">Category One</h5>
+                      <p id="game-card-description-0" class="card-text">
+                        These are the rules for minutes 0-9.
+                      </p>
+                    </div>
+                  </div>
+                <p class="random-category text-center"><button onclick="randomCategoryOne(myCategories)" id="category-one-button" class="btn btn-sm btn-primary btn-primary text-light" href="">Random</button></p>
+                </div>
+                <div class="col-lg-3">
+                  <div class="card p-2 m-2 shadow-sm">
+                    <a  href="#" id="x-button-1"  class="x-button" style="display: none">X</a>
+                    <div class="card-body">
+                      <h5 id="game-card-title-1" class="card-title">Category Two</h5>
+                      <p id="game-card-description-1" class="card-text">
+                        These are the rules for minutes 10-19.
+                      </p>
+                    </div>
+                  </div>
+                <p class="random-category text-center"><button onclick="randomCategoryTwo(myCategories)" id="category-one-button" class="btn btn-sm btn-primary btn-primary text-light" href="">Random</button></p>
+                </div>
+                <div class="col-lg-3">
+                  <div class="card p-2 m-2 shadow-sm">
+                    <a  href="#" id="x-button-2" class="x-button" style="display: none">X</a>
+                    <div class="card-body">
+                      <h5 id="game-card-title-2" class="card-title">Category Three</h5>
+                      <p id="game-card-description-2" class="card-text">
+                        These are the rules for minutes 20-29.
+                      </p>
+                    </div>
+                  </div>
+                  <p class="random-category text-center"><button onclick="randomCategoryThree(myCategories)" class="btn btn-sm btn-primary btn-primary text-light" href="">Random</button></p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-3">
+                  <div class="card p-2 m-2 shadow-sm">
+                    <a  href="#" id="x-button-3"  class="x-button" style="display: none">X</a>
+                    <div class="card-body">
+                      <h5 id="game-card-title-3" class="card-title">Category Four</h5>
+                      <p id="game-card-description-3" class="card-text">
+                        These are the rules for minutes 30-39.
+                      </p>
+                    </div>
+                  </div>
+                  <p class="random-category text-center"><button onclick="randomCategoryFour(myCategories)" class="btn btn-sm btn-primary btn-primary text-light" href="">Random</button></p>
+                </div>
+                <div class="col-lg-3">
+                  <div class="card p-2 m-2 shadow-sm game-card">
+                    <a  href="#" id="x-button-4"  class="x-button" style="display: none">X</a>
+                    <div class="card-body">
+                      <h5 id="game-card-title-4" class="card-title">Category Five</h5>
+                      <p id="game-card-description-4" class="card-text">
+                        These are the rules rules for minutes 30-39.
+                      </p>
+                    </div>
+                  </div>
+                <p class="random-category text-center"><button onclick="randomCategoryFive(myCategories)" class="btn btn-sm btn-primary btn-primary text-light" href="">Random</button></p>
+                </div>
+                <div class="col-lg-3">
+                  <div class="card p-2 m-2 shadow-sm game-card">
+                    <a  href="#" id="x-button-5"  class="x-button" style="display: none">X</a>
+                    <div class="card-body">
+                      <h5 id="game-card-title-5" class="card-title">Category Six</h5>
+                      <p id="game-card-description-5" class="card-text">
+                        These are the rules for minutes 50-59.
+                      </p>
+                    </div>
+                  </div>
+                  <p class="random-category text-center"><button onclick="randomCategorySix(myCategories)" class="btn btn-sm btn-primary btn-primary text-light" href="">Random</button></p>
+                </div>
+            </div>
+
+						
+
+
+
+
+                    <!-- Play Button -->
+            <div class="row justify-content-center mt-5">
+                <div class="col-lg-4">
+                    <button id="lets-party" class="btn btn-block btn-primary py-3" onclick="letsParty()">
+                        <p  class="h6 mb-0">LET'S PARTY</p>
+                    </button>
+                    <button id="try-it">Try it</button>
+                        <p id="days"></p>
+                        <p id="hours"></p>
+                        <p id="mins"></p>
+                        <p id="secs"></p>
+                        <h2 id="end"></h2>
+                    </div>
+                </div>
+            </div>
+
+
+                    
+                  <!-- countdown clock -->
+
+
+	    		</div>
+	    	</div>
+	    </div>
+    </section>
+
+    <!-- How to Play -->
+
+    <section id="how-to-play" class="text-light">
+    	<div class="container">
+    		<h3 class="text-center">How to Play</h3>
+    		<div class="row justify-content-center">
+    			<div class="col-md-8">
+    				<div class="row justify-content-center mt-5">
+    					<div class="col-1"><p>1.</p></div>
+    					<div class="col-10">
+								<p>Select six musical categories from the <a href="#categories" class="text-light"><u>Category List</u></a> below</p>
+							</div>
+    				</div> 
+    				<div class="row justify-content-center mt-3">
+    					<div class="col-1"><p>2.</p></div>
+    					<div class="col-10">
+								<p>Hit the "Let's Party" button to lock in categories and start the timer</p>
+							</div>
+    				</div>
+    				<div class="row justify-content-center mt-3">
+    					<div class="col-1"><p>3.</p></div>
+    					<div class="col-10">
+								<p>At the 60 minute mark, one person plays a song that fits the category</p>
+                <p>(You will need a device with Spotify, Apple Music, Youtube, etc.)</p>
+							</div>
+    				</div>
+    				<div class="row justify-content-center mt-3">
+    					<div class="col-1"><p>4.</p></div>
+    					<div class="col-10">
+								<p>At the 59 minute mark exactly, the next person plays their song</p>
+							</div>
+    				</div>
+            <div class="row justify-content-center mt-3">
+              <div class="col-1"><p>5.</p></div>
+              <div class="col-10">
+                <p>Repeat until the hour is complete</p>
+              </div>
+            </div>
+    				<div class="row justify-content-center mt-3">
+    					<div class="col-1"><p>6.</p></div>
+    					<div class="col-10">
+								<p>Switch categories every 10 Minutes</p>
+							</div>
+    				</div>
+						
+						<h4 class="text-center mt-5">Drinking Rules</h4>
+
+    				<div class="row justify-content-center mt-5">
+    					<div class="col-1"><p>7.</p></div>
+    					<div class="col-10">
+								<p>Take a sip of your drink every single minute</p>
+							</div>
+    				</div>
+    				<div class="row justify-content-center mt-3">
+    					<div class="col-1"><p>8.</p></div>
+    					<div class="col-10">
+								<p>If you don't play your song at the minute mark, finish your drink.</p>
+							</div>
+    				</div>
+    				<div class="row justify-content-center mt-3">
+    					<div class="col-1"><p>9.</p></div>
+    					<div class="col-10">
+								<p>One person in the group must know the song. If not, finish your drink.</p>
+							</div>
+    				</div>
+    				<div class="row justify-content-center mt-3">
+    					<div class="col-1"><p>10.</p></div>
+    					<div class="col-10">
+                <p>Cheers out loud to every artist you pick. If you forget, finish your drink.</p>
+                <p>(For example, "Cheers to Lil Jon and the East Side Boys!")</p>
+              </div>
+    				</div>
+    				<div class="row justify-content-center mt-3">
+    					<div class="col-1"><p>11.</p></div>
+    					<div class="col-10">
+                <p>If you repeat a musician that someone has already played, finish your drink</p>
+              </div>
+    				</div>
+    				<div class="row justify-content-center mt-3">
+    					<div class="col-1"><p>12.</p></div>
+    					<div class="col-10">
+								<p>You can challenge anyone's song pick, if you dont think it fits the category.</p>
+                <p>Majority vote wins. Loser of the challenge has to finish their drink</p>
+							</div>
+    				</div>
+	    		</div>
+    		</div>
+    	</div>
+    </section>
+
+<!-- Master Category List -->
+
+    <section id="categories">
+    	<div class="container">
+    		<h3 class="text-center">Categories</h3>
+    		<div id="master-card-row" class="row justify-content-center mt-5">
+
+          <!-- Master Category For Loop -->
+
+<!--        <div class="col-lg-3">
+			         <div class="card p-2 m-2 shadow-sm">
+    			        <div class="card-body">
+    			          <h5 class="card-title"></h5>
+    			          <p class="card-text"></p>
+                  </div>
+    			     </div>
+						</div>
+
+            <div class="text-center">
+						  <button class="btn btn-sm btn-primary text-light">Add to game</button>
+            </div>
+ -->
+
+          <!-- Master Category For Loop End-->
+
+
+        </div>
+      </div>
+					
+    </section>
+
+
+<!-- Footer -->
+
+<footer class="text-light p-3">
+	<p class="mb-0 text-center">&copy; Personal Power Hour <span id="year"></span></p>
+</footer>
+
+
+<script src="http://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>	
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script src="app.js"></script>
+
+</body>
+</html>
